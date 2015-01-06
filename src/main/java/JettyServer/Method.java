@@ -27,10 +27,8 @@ public class Method {
             out = httpServletResponse.getWriter();
             while ((tmp = read.readLine()) != null) {
                 out.println(tmp);
-                //alala
             }
             read.close();
-
         } catch (FileNotFoundException e) {
 
             httpServletResponse.sendError(410, "no such file");
