@@ -22,19 +22,18 @@ public class Method {
             file = new FileReader("C:\\Users\\kot\\IdeaProjects\\JavaCode\\" + url.toLowerCase());
             PrintWriter out = null;
             //fixme не делай трай внутри трая, сделай два кетча
-                BufferedReader read = new BufferedReader(file);
-                String tmp = "";
-                out = httpServletResponse.getWriter();
-                while ((tmp = read.readLine()) != null) {
-                    out.println(tmp);
-                    //alala
-                }
-                read.close();
-
+            BufferedReader read = new BufferedReader(file);
+            String tmp = "";
+            out = httpServletResponse.getWriter();
+            while ((tmp = read.readLine()) != null) {
+                out.println(tmp);
+                //alala
+            }
+            read.close();
 
         } catch (FileNotFoundException e) {
 
-                httpServletResponse.sendError(410, "no such file");
+            httpServletResponse.sendError(410, "no such file");
 
         }
     }
