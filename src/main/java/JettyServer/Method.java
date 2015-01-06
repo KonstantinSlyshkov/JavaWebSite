@@ -29,6 +29,7 @@ public class Method {
                 }
                 read.close();
 
+
         } catch (FileNotFoundException e) {
 
                 httpServletResponse.sendError(410, "no such file");
