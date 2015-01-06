@@ -16,6 +16,7 @@ public class Method {
         httpServletResponse.setStatus(HttpServletResponse.SC_OK);
         String url = httpServletRequest.getRequestURI();
         FileReader file = null;
+        //fixme format java always
         try {
             //fixme У меня нет такого пути, у меня вообще не работает :(
             file = new FileReader("C:\\Users\\kot\\IdeaProjects\\JavaCode\\" + url.toLowerCase());
