@@ -26,6 +26,7 @@ public class Method {
                 out = httpServletResponse.getWriter();
                 while ((tmp = read.readLine()) != null) {
                     out.println(tmp);
+                    //alala
                 }
                 read.close();
 
